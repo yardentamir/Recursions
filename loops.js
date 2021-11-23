@@ -191,6 +191,8 @@
 // };
 
 // console.log(checkPassword("367rEE"));
+// console.log(checkPassword("367rE"));
+// console.log(checkPassword("36rEE"));
 
 //--------------------------///
 
@@ -207,7 +209,39 @@
 
 //--------------------------//
 
+//polindrome
+
+// const poly = (str) => {
+//   for (let i = 0; i < str.length / 2; i++) {
+//     if (str[i] !== str[str.length - 1 - i]) return false;
+//   }
+//   return true;
+// };
+
+// console.log(poly("iaebeai"));
+// console.log(poly("aba"));
+// console.log(poly("notpolidrome"));
+
 ///---------------------///
+
+// const polyNum = (num) => {
+//   let rest,
+//     temp = num,
+//     final = 0;
+
+//   while (num > 0) {
+//     rest = num % 10;
+//     num = parseInt(num / 10);
+//     final = final * 10 + rest;
+//   }
+
+//   return final === temp;
+// };
+
+// console.log(polyNum(123321));
+// console.log(polyNum(1921));
+
+//-------------------///
 
 //
 
