@@ -54,6 +54,18 @@
 
 // console.log(countEven2(125822));
 
+///---------------------////
+
+// const countEven3 = (n) => {
+//   let count = 0;
+//   while (n) {
+//     count += n % 2 === 0;
+//     n = Math.floor(n / 10);
+//   }
+//   return count;
+// };
+// console.log(countEven3(125822));
+
 ///----------------------///
 
 // כתוב פונקציה countEvenOnRange המקבלת n שהוא מספר תלת ספרתי לפחות ומחזירה כמה ספרות זוגיות יש בטווח של 111 עד n.
@@ -72,6 +84,9 @@
 
 ///----------------------------/
 
+//כתוב פונקציה printReverse שמדפיסה את כל המספרים הזוגיים מ0 ועד 100 בסדר יורד.
+// בונוס : לכתוב את הפונקציה בלי if :)
+
 // const printReverse = () => {
 //   for (let i = 100; i > -1; i -= 2) {
 //     console.log(i);
@@ -81,3 +96,29 @@
 // printReverse();
 
 //----------------------------///
+
+//כתוב פונקציה quadratic המקבלת a,c,b ומחזירה פתרון של sמשוואה ריבועית,את התוצאה יש להציג בצורה הבאה לדוגמא:
+// x1 = 5 , x2 = 9 .
+
+// const quadratic = (a, b, c) => {
+//   var x1 = (-1 * b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+//   var x2 = (-1 * b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
+//   console.log(x1);
+//   console.log(x2);
+// };
+
+// quadratic(1, 1, -1);
+
+//---------------------///
+
+// let countABC = (str) => {
+//   let obj = {};
+//   str = str.split(" ").join("");
+//   while (str) {
+//     obj[str[0]] ? obj[str[0]]++ : (obj[str[0]] = 1);
+//     str = str.substring(1);
+//   }
+//   return obj;
+// };
+
+// console.log(countABC("hello world how are you"));
