@@ -80,7 +80,8 @@
 //   return count;
 // };
 
-// console.log(countEvenOnRange(115));
+// console.log(countEvenOnRange(125));
+///----------------------------///
 
 ///----------------------------/
 
@@ -151,3 +152,12 @@
 // console.log(toUpper("hello how are you"));
 
 ///--------------------------------//
+// email validation
+
+// const checkEmail = (email) => {
+//   return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+// };
+
+// console.log(checkEmail("myemail@gmail.com"));
+
+///-----------------------------------//
