@@ -125,6 +125,26 @@
 
 // console.log(countABC("hello world how are you"));
 
+// // כתוב פונקציה countABC המקבלת משפט , החזר מערך המציין כמה פעמים מופיעה כל אות.
+// let countABC = (str) => {
+//   let letterArr = [];
+//   let countArr = [];
+//   str = str.split(" ").join("");
+//   while (str) {
+//     if (!letterArr.includes(str[0])) {
+//       letterArr.push(str[0]);
+//       countArr.push(1);
+//     } else {
+//       let index = letterArr.indexOf(str[0]);
+//       countArr[index]++;
+//     }
+//     str = str.substring(1);
+//   }
+//   return countArr;
+// };
+
+// console.log(countABC("hello world how are you"));
+
 /// ------------------------------///
 // כתוב פונקציה toUpper המקבלת מחרוזת str באנגלית ומחזירה את המחרוזת באותיות גדולות (אין להשתמש בפעולה  toUpperCase
 //   של js ).
@@ -161,3 +181,47 @@
 // console.log(checkEmail("myemail@gmail.com"));
 
 ///-----------------------------------//
+// pw validation
+
+// const checkPassword = (password) => {
+//   let pattern = new RegExp(
+//     "^(?=(.*[a-z]){1,})(?=(.*[A-Z]{2,}))(?=(.*[0-9]){3,})"
+//   ); //Regex: At least 3 numerical numbers, 1 lower case letter, 2 upper case letter,
+//   return pattern.test(password);
+// };
+
+// console.log(checkPassword("367rEE"));
+
+//--------------------------///
+
+// strike
+// const isStrike = (num) => {
+//   const arr = num.split("");
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     if (parseInt(arr[i]) > parseInt(arr[i + 1])) return false;
+//   }
+//   return true;
+// };
+
+// console.log(isStrike("1234569"));
+
+//--------------------------//
+
+///---------------------///
+
+//
+
+// const BeforeNumber = (nums) => {
+//   const arr = nums.split("");
+//   let counter = 0;
+//   for (let i = 0; i < arr.length - 1; i++) {
+//     if (parseInt(arr[i]) + 1 === parseInt(arr[i + 1])) {
+//       counter++;
+//     }
+//   }
+//   return counter;
+// };
+
+// console.log(BeforeNumber("3452978"));
+
+//-----------------///
