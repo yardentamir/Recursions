@@ -111,6 +111,7 @@
 
 //---------------------///
 
+// כתוב פונקציה countABC המקבלת משפט , החזר מערך המציין כמה פעמים מופיעה כל אות.
 // let countABC = (str) => {
 //   let obj = {};
 //   str = str.split(" ").join("");
@@ -122,3 +123,31 @@
 // };
 
 // console.log(countABC("hello world how are you"));
+
+/// ------------------------------///
+// כתוב פונקציה toUpper המקבלת מחרוזת str באנגלית ומחזירה את המחרוזת באותיות גדולות (אין להשתמש בפעולה  toUpperCase
+//   של js ).
+
+// const toUpper = (str) => {
+//   let upperStr = '';
+// for (let i = 0; i < str.length; i++) {
+//   upperStr+=String.fromCharCode(a.charCodeAt(x)>96 && a.charCodeAt(x)<123 ? a.charCodeAt(x)-32: a.charCodeAt(x))
+// }
+// return upperStr;
+// }
+
+// console.log(toUpper("hello world how are you"));
+
+// function toUpper(str) {
+//   let newStr = "";
+//   for (let i = 0; i < str.length; i++)
+//     newStr += String.fromCharCode(
+//       str.charCodeAt(i) > 96 && str.charCodeAt(i) < 123
+//         ? str.charCodeAt(i) - 32
+//         : str.charCodeAt(i)
+//     );
+//   return newStr;
+// }
+// console.log(toUpper("hello how are you"));
+
+///--------------------------------//
